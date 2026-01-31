@@ -14,3 +14,15 @@ if(weather==="snow"){
 }else{
     console.log("wear what you have on.");
 }
+/*question about if else statement
+ */
+const money=100.50;
+const price=100.50;
+
+if(money>price){
+    console.log("you paid exra, here is your change.");
+}else if (money===price){
+    console.log("You paid the exact amount, have a nice day!");
+} else {
+    console.log("That is not enough, you still owe me money.");
+}
