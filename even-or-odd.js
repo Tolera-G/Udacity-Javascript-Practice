@@ -20,9 +20,9 @@ const number = 2;
 
 // your code goes here
 if (number%2===0) {
-    console.log("even");
+    console.log(" the number is even");
     
 } else {
-    console.log("odd");
+    console.log("the number is odd");
 
 }
