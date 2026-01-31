@@ -1,25 +1,16 @@
-/*
- * Programming Quiz: Musical Groups
- */
-/*
- * QUIZ REQUIREMENTS
- * 1. Your code should have a variable `musicians`, and include `if...else if...else` conditional statement
- * 2. Your code should produce the expected output, as mentioned above. Read each condition carefully. 
- */
- 
-// change the value of `musicians` to test your conditional statements
-const musicians = 76;
 
-if(musicians===0){
+// change the value of ,[object Object], to test your conditional statements
+const musicians = 0;
+if (musicians <= 0) {
     console.log("not a group");
-}else if(musicians===1){
+} else if (musicians === 1) {
     console.log("solo");
-}else if(musicians===2){
+} else if (musicians === 2) {
     console.log("duet");
-}else if(musicians===3){
+} else if (musicians === 3) {
     console.log("trio");
-}else if(musicians===4){
+} else if (musicians === 4) {
     console.log("quartet");
-}else if(musicians===76){
+} else if (musicians >= 5) {
     console.log("this is a large group");
 }
