@@ -36,16 +36,16 @@ let solved = false;
 */
 if (room === 'ballroom' && suspect==="Mr. Kalehoff") {
   weapon = 'poison';
-  solved = true;
-}
-    
+  solved = true;   
 } else if (room==='gallery' && suspect==="Mr.Parkes") {
-  weapon="trophy "
-    
-} else if (/* your conditional goes here */) {
-    
-} else {
-    
+  weapon="trophy";
+  solved=true;  
+} else if (room==="billiardroom" && suspect==="Mr.Spark") {
+  weapon="pool stick";
+  solved=true;  
+} else if(room==="dining room"&&suspect==="Mr. Parkes"){
+  weapon="knife";
+  solved=true;    
 }
 /* ****************************************** */
 // The code below will run only when `solved` is true
