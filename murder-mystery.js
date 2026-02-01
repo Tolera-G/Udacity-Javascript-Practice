@@ -50,7 +50,7 @@ if (room === 'ballroom' && suspect==="Mr. Kalehoff") {
 /* ****************************************** */
 // The code below will run only when `solved` is true
 if (solved) {
-	console.log(/* your message goes here*/);
+	console.log("this case is solved");
 } else {
   console.log("The case is not solved!")
 }
