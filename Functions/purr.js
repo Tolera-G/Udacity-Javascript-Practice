@@ -8,7 +8,7 @@ function cat() {
         return catMessage;
     };
     function purr() {
-        return 'purrrr!';
+        return 'purrr!';
     }
 }
 
