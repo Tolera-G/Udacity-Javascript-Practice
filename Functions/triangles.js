@@ -2,15 +2,10 @@
  * Programming Quiz: Build A Triangle (5-3)
  */
 
-/*
- * QUIZ REQUIREMENTS
- * - Your code should have a `buildTriangle()` function
- * - Your `buildTriangle()` function should take one argument (or you can say parameter)
- * - Your `laugh()` function should build the triangle as described above
+/**
+ * Creates a single line of asterisks followed by a newline.
+ * @param {number} length - The number of stars in the line.
  */
-
-
-// creates a line of * for a given length
 function makeLine(length) {
     let line = "";
     for (let j = 1; j <= length; j++) {
@@ -19,21 +14,19 @@ function makeLine(length) {
     return line + "\n";
 }
 
-// your code goes here.  Make sure you call makeLine() in your own code.
-function buildTriangle(length) {
-// Let's build a huge string equivalent to the triangle
-var triangle = "";
-//Let's start from the topmost line
-let lineNumber = 1;
-for(lineNumber=1; lineNumber<=length; lineNumber++){
-    // We will not print one line at a time.
-    // Rather, we will make a huge string that will comprise the whole triangle
-    triangle = triangle + makeLine(lineNumber);
+/**
+ * Builds a multi-line triangle string.
+ * @param {number} height - The total number of rows in the triangle.
+ */
+function buildTriangle(height) {
+    let triangle = "";
+    
+    for (let i = 1; i <= height; i++) {
+        triangle += makeLine(i);
+    }
+    
+    return triangle;
 }
-return triangle;
-}
-// test your code
-console.log(buildTriangle(10));
 
-// test your code 
+// Test the function
 console.log(buildTriangle(10));
